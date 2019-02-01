@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gthideheaderdemo.MainActivity" >
+
+    <com.example.gthideheaderdemo.view.GtScrollView 
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <ImageView 
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:id="@+id/head_img"
+                android:background="@drawable/head"
+                />
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                >
+                
+            </LinearLayout>
+        </LinearLayout>
+    </com.example.gthideheaderdemo.view.GtScrollView>
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fd915b"
+        android:id="@+id/header"
+        >
+        <ImageView 
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/back"
+            android:src="@drawable/back"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="#ffffff"
+            android:text="标题"
+            android:layout_centerInParent="true"
+            />
+        <ImageView 
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:id="@+id/add"
+            android:src="@drawable/add"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    
+</RelativeLayout>
